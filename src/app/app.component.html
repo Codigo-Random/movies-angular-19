@@ -1,5 +1,6 @@
 <h1 class="text-4xl font-bold">Pelis</h1>
-
+<app-menu></app-menu>
+<router-outlet />
 <div class="max-w-xl mx-auto p-6">
   @if (dataMovies$ | async; as data) {
     <div class="grid grid-cols-3 gap-2">
@@ -9,4 +10,4 @@
     </div>
   }
 </div>
-<router-outlet />
+
